@@ -3,13 +3,14 @@ export default function Ticket({ name, email, github, avatar, id }) {
   return (
     <div className="ticket-container">
       <h3 className="text-4xl font-bold text-primary text-center leading-10 tracking-wide md:text-[2.8rem] md:w-2xl md:leading-12 mx-auto">
-        Congrats, <span className="gradient-text capitalize">{name}!</span> Your
+        Congrats,{" "}
+        <span className="gradient-text capitalize">{name.trim()}!</span> Your
         ticket is ready.
       </h3>
       <p className="text-base text-center text-primary-300 tracking-wide mt-6 md:text-lg md:w-sm mx-auto">
         we've emailed your ticket to{" "}
-        <span className="text-main-500">{email}</span> and will send updates in
-        the run up to the event.
+        <span className="text-main-500 lowercase">{email.trim()}</span> and will
+        send updates in the run up to the event.
       </p>
       <div className="relative mx-auto mt-24 w-full max-w-md lg:min-w-lg shadow-md">
         {/* Ticket background */}
@@ -50,7 +51,7 @@ export default function Ticket({ name, email, github, avatar, id }) {
 
             <div>
               <h4 className="text-primary-300 text-lg font-medium md:text-2xl capitalize">
-                {name}
+                {name.trim()}
               </h4>
               {github ? (
                 <p className="text-sm text-primary-300 mt-0.5 md:mt-2 md:text-base flex justify-start gap-x-2">

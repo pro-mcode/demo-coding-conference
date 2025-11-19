@@ -112,7 +112,7 @@ function App() {
   };
 
   return (
-    <div className="relative responsive-bg max-h-screen">
+    <div className="relative responsive-bg max-h-screen ">
       <img
         src="assets/images/pattern-squiggly-line-top.svg"
         alt=""
@@ -145,7 +145,7 @@ function App() {
       />
 
       <div className=" max-w-[1440px] mx-auto flex flex-col justify-center items-center">
-        <div className="absolute inset-0 lines-bg flex flex-col justify-start items-center overflow-scroll z-20">
+        <div className="absolute inset-0 lines-bg flex flex-col justify-start items-center min-h-screen overflow-scroll z-20">
           <div className="w-[90%] mx-auto pt-12 pb-24 z-10 md:w-full">
             <img
               src="assets/images/logo-full.svg"
