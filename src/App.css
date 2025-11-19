@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 395px;
+  --breakpoint-tb: 400px;
+
+  --color-main-500: hsl(7, 88%, 67%);
+  --color-main-700: hsl(7, 71%, 60%);
+  --color-primary: hsl(0, 0%, 100%);
+  --color-primary-300: hsl(252, 6%, 83%);
+  --color-primary-500: hsl(245, 15%, 58%);
+  --color-primary-700: hsl(245, 19%, 35%);
+  --color-primary-900: hsl(248, 70%, 10%);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+  -webkit-text-fill-color: hsl(252, 6%, 83%) !important;
+  transition: background-color 5000s ease-in-out 0s;
+  caret-color: hsl(252, 6%, 83%);
+  color: hsl(252, 6%, 83%);
+}
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    hsl(7, 86%, 67%) 0%,
+    hsl(0, 0%, 100%) 100%
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.responsive-bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/images/background-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lines-bg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/images/pattern-lines.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .responsive-bg {
+    background-image: url("assets/images/background-tablet.png");
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .responsive-bg {
+    background-image: url("assets/images/background-desktop.png");
+  }
+}
