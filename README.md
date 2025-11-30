@@ -73,7 +73,7 @@ travely-demo
 └── src
 ├── components
 ├── pages
-├── scss
+├── css
 ├── assets
 ├── utils
 └── App.jsx
