@@ -15,6 +15,7 @@ export default function Form({
 }) {
   return (
     <div className="form-container">
+      <title>Coding Conference - Register</title>
       <h3 className="text-4xl font-bold text-primary text-center leading-10 tracking-wide md:text-[2.8rem] md:w-2xl md:leading-12 mx-auto">
         Your Journey to Coding Conf 2025 Starts Here!
       </h3>

@@ -2,6 +2,7 @@ export default function Ticket({ name, email, github, avatar, id }) {
   const previewUrl = avatar ? URL.createObjectURL(avatar) : null;
   return (
     <div className="ticket-container">
+      <title>Coding Conference - Ticket</title>
       <h3 className="text-4xl font-bold text-primary text-center leading-10 tracking-wide md:text-[2.8rem] md:w-2xl md:leading-12 mx-auto">
         Congrats,{" "}
         <span className="gradient-text capitalize">{name.trim()}!</span> Your
